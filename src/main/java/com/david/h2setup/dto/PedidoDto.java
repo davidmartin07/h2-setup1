@@ -3,6 +3,9 @@ package com.david.h2setup.dto;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
 
 
 public class PedidoDto {
@@ -13,9 +16,9 @@ public class PedidoDto {
 
     private LocalDate horaDeRecogida;
 
-
+    @OneToMany
     private List<ProductoDto> productos;
-
+    @ManyToOne
     private CompradorDto comprador;
 
     public PedidoDto() {
