@@ -24,7 +24,7 @@ public class Comprador {
     @Column(length = 255, nullable = false)
     private String direccion;
 
-    @Column(length = 25, nullable = false)
+    @Column( nullable = false)
     private Long cp;
 
     public Comprador() {
